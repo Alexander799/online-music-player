@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Простой музыкальный плеер MuPOl позволяет прослушивать в онлайн популярное треки">
+   <meta name="keywords" content="online,music,player,listen,MuPOl,Мьюпол,онлайн,музыка,плеер,слушать,">
+   <link rel="stylesheet" href="./css/reset.css">
+   <link rel="stylesheet" href="./css/style.css">
+   <title>MuPOl. Слушать музыку онлайн в музыкальном плеере MuPOl</title>
+</head>
+
+<body>
+   <div class="music-app">
+      <audio class="player"></audio>
+      <div class="cover">
+         <img src="./img/tame-impala-borderline.jpg" alt="Borderline cover">
+      </div>
+      <div class="song-info">
+         <div class="song-info__soundtrack">
+            <h1>
+               Borderline
+            </h1>
+         </div>
+         <div class="song-info__singer">
+            <h2>
+               Tame Impala
+            </h2>
+         </div>
+      </div>
+      <div class="control-block">
+         <div class="control-block__buttons">
+            <button class="control-block__backward" aria-label="backward button">
+               <img src="./img/backward.svg" alt="">
+            </button>
+            <button class="control-block__play control-block__play_play" aria-label="play button">
+               <img src="./img/play.svg" alt="">
+            </button>
+            <button class="control-block__forward" aria-label="forward button">
+               <img src="./img/forward.svg" alt="">
+            </button>
+         </div>
+         <div class="control-block__progress-field">
+            <div class="control-block__progress">
+               <span class="control-block__progress-track"></span>
+               <span class="control-block__progress-marker">
+                  <span class="control-block__current-time">0:00</span>
+                  <span class="control-block__slider"></span>
+               </span>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
